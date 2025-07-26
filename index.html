@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Солнце: Борьба с Лужами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="ui">
+            <div id="clock">
+                <div id="clock-face"></div>
+                <div id="clock-hand"></div>
+                <div id="clock-center"></div>
+            </div>
+        </div>
+        
+        <div id="puddles-counter">Лужи: 0</div>
+        
+        <div id="menuScreen" class="screen">
+            <div class="dialog">
+                <h1 class="title">Солнце: Борьба с Лужами</h1>
+                <p class="description">
+                    После сильного дождя город залит лужами!<br><br>
+                    Помоги Солнцу высушить все лужи до заката.<br>
+                    Управляй им с помощью мышки или стрелок ← →<br><br>
+                    Остерегайся туч — они закрывают солнечный свет!<br>
+                    Грозовые облака могут снова намочить землю.
+                </p>
+            </div>
+            <button class="button" id="startButton">Играть</button>
+        </div>
+        
+        <div id="endScreen" class="screen" style="display: none;">
+            <div class="dialog">
+                <h1 id="endTitle" class="title"></h1>
+                <p id="endMessage"></p>
+            </div>
+            <button class="button" id="restartButton">Заново</button>
+        </div>
+        
+        <div id="loading">
+            Загрузка игры...
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
